@@ -1,27 +1,38 @@
 # Mine for Pokémon
 
-A playable browser-game starter for the Mine for Pokémon project.
+A playable browser game prototype for the Mine for Pokémon project.
 
 ## Play
-Open the published site: https://tt608.github.io/mine-for-pokemon/
 
-You can also open `index.html` in a modern browser. Progress saves in that browser on that device.
+Open the live game: https://tt608.github.io/mine-for-pokemon/
 
-## Current features
-- Click-to-mine blocks and earn coins
-- 12% chance of a critical hit for double mining damage
-- Pickaxe upgrades
-- Mystery eggs and an eight-buddy starter collection
-- Equip discovered buddies for bonus coin earnings
-- Evolve six buddies into stronger forms for 100 coins, with an improved coin bonus
-- Three unlockable worlds
-- Daily reward and rebirth boost
-- Local browser save
+Progress saves automatically in local storage in the browser and device where you play. Keep using the same browser to keep your save.
+
+## Features
+
+- Mine blocks for coins and land critical hits.
+- Upgrade your pickaxe and hatch mystery eggs.
+- Collect 16 creatures, equip buddies for coin bonuses, and evolve eligible creatures for 100 coins.
+- Discover creature traits: Normal, Shiny, Golden, and Giant. Rare traits have stronger bonuses.
+- Explore a walkable, isometric 3D-style island using **WASD**, arrow keys, or the on-screen controls.
+- Mine glowing ore crystals on the island for bonus coins.
+- Train on the treadmill after walking 10 steps to earn 50% extra coins from your next 10 broken blocks.
+- Unlock Meadow, Ember Desert, and Frost Cave.
+- Claim a daily gift.
+- Rebirth when you have at least 500 coins and 3 discovered creatures. Rebirth increases permanent coin bonuses; every third rebirth grants a 100-coin milestone gift.
+- Your existing local save is kept and extended with defaults for new features.
+
+## Controls
+
+- **W / A / S / D** or **arrow keys**: walk around the island.
+- Use the arrow buttons for touch screens.
+- Stand close to a glowing ore crystal and press **Mine nearby ore**.
+- Use the main **MINE BLOCK!** button for the original mining loop.
 
 ## Publish with GitHub Pages
+
 In repository **Settings → Pages**, choose **Deploy from a branch**, select branch `main` and folder `/(root)`, then save.
 
-## Next development steps
-This is currently a 2D browser prototype, not the planned 3D simulator. Planned improvements include better mining animations, creature evolutions, traits, additional worlds, and admin events.
+## Notes
 
-This is a fan-made prototype and is not an official Pokémon game or affiliated with Nintendo, Game Freak, or The Pokémon Company.
+The island is a lightweight 3D-style/isometric canvas scene, not a full 3D engine or Roblox experience yet. The creatures use emoji-style placeholder art. This is a fan-made prototype and is not an official Pokémon game or affiliated with Nintendo, Game Freak, or The Pokémon Company.
