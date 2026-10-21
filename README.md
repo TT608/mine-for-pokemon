@@ -2,25 +2,25 @@
 
 A playable browser-game starter for the Mine for Pokémon project.
 
-## Play locally
+## Play
+Open the published site: https://tt608.github.io/mine-for-pokemon/
 
-Open `index.html` in a modern web browser. Progress saves in that browser on that device.
-
-## Publish as a website with GitHub Pages
-
-1. Open the repository's **Settings** tab.
-2. Choose **Pages** in the left sidebar.
-3. Under **Build and deployment**, set the source to **Deploy from a branch**.
-4. Choose branch **main** and folder **/(root)**, then click **Save**.
-5. Wait for GitHub Pages to publish. The site should appear at `https://tt608.github.io/mine-for-pokemon/`.
+You can also open `index.html` in a modern browser. Progress saves in that browser on that device.
 
 ## Current features
-
 - Click-to-mine blocks and earn coins
+- 12% chance of a critical hit for double mining damage
 - Pickaxe upgrades
-- Mystery eggs and a starter buddy collection
+- Mystery eggs and an eight-buddy starter collection
+- Equip discovered buddies for bonus coin earnings
 - Three unlockable worlds
 - Daily reward and rebirth boost
 - Local browser save
 
-This is an original creature-collecting prototype, not an official Pokémon game or affiliated with Nintendo, Game Freak, or The Pokémon Company. It is a 2D browser prototype for now; 3D visuals, more creatures/evolutions, traits, and admin events can be added in later steps.
+## Publish with GitHub Pages
+In repository **Settings → Pages**, choose **Deploy from a branch**, select branch `main` and folder `/(root)`, then save.
+
+## Next development steps
+This is currently a 2D browser prototype, not the planned 3D simulator. Planned improvements include better mining animations, creature evolutions, traits, additional worlds, and admin events.
+
+This is a fan-made prototype and is not an official Pokémon game or affiliated with Nintendo, Game Freak, or The Pokémon Company.
