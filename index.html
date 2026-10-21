@@ -33,7 +33,7 @@ function save(){localStorage.setItem("mfp-save",JSON.stringify(s));}
 function notify(msg){$("toast").textContent=msg;$("toast").classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>$("toast").classList.remove("show"),1900);}
 function multiplier(){return (1+s.rebirths*.5+Math.floor(s.rebirths/3)*.25)*buddyBonus();}
 function rollTrait(i){if(s.traits[i])return s.traits[i];const r=Math.random();s.traits[i]=r<.02?"Golden":r<.10?"Shiny":r<.16?"Giant":"Normal";return s.traits[i];}
-function buddyBonus(){if(s.equipped===null||!s.found.includes(s.equipped))return 1;return [1.1,1.1,1.15,1.15,1.15,1.1,1.2,1.5][s.equipped]+(s.evolved.includes(s.equipped)?.25:0);}
+function buddyBonus(){if(s.equipped===null||!s.found.includes(s.equipped))return 1;return ([1.1,1.1,1.15,1.15,1.15,1.1,1.2,1.5,1.1,1.15,1.25,1.1,1.15,1.25,1.3,1.3][s.equipped]||1.1)+(s.evolved.includes(s.equipped)?.25:0) * traitBonus(s.equipped);}
 function render(){
 $("coins").textContent=Math.floor(s.coins);$("power").textContent=s.power+" · x"+multiplier().toFixed(1);$("found").textContent=s.found.length+"/"+buddies.length;$("rebirthProgress").textContent="Rebirth bonuses: +"+Math.round(s.rebirths*50+Math.floor(s.rebirths/3)*25)+"%";$("oreProgress").textContent="Ore mined: "+s.oreMined;
 $("worldTitle").textContent=worlds[s.world].name;$("worldPill").textContent=worlds[s.world].pill;
