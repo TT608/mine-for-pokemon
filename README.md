@@ -13,6 +13,7 @@ You can also open `index.html` in a modern browser. Progress saves in that brows
 - Pickaxe upgrades
 - Mystery eggs and an eight-buddy starter collection
 - Equip discovered buddies for bonus coin earnings
+- Evolve six buddies into stronger forms for 100 coins, with an improved coin bonus
 - Three unlockable worlds
 - Daily reward and rebirth boost
 - Local browser save
