@@ -19,7 +19,8 @@
 <script>
 (function(){
 const buddies=[{name:"Pikachu",emoji:"⚡",rarity:"Rare"},{name:"Eevee",emoji:"🦊",rarity:"Common"},{name:"Charmander",emoji:"🔥",rarity:"Uncommon"},{name:"Squirtle",emoji:"💧",rarity:"Uncommon"},{name:"Bulbasaur",emoji:"🌱",rarity:"Uncommon"},{name:"Jigglypuff",emoji:"🎀",rarity:"Common"},{name:"Snorlax",emoji:"💤",rarity:"Rare"},{name:"Mew",emoji:"🌟",rarity:"Legendary"}];
-const evolutions={0:{name:"Raichu",emoji:"⚡"},1:{name:"Vaporeon",emoji:"💧"},2:{name:"Charmeleon",emoji:"🔥"},3:{name:"Wartortle",emoji:"🌊"},4:{name:"Ivysaur",emoji:"🌿"},5:{name:"Wigglytuff",emoji:"🎀"}};\nconst worlds=[{name:"🌿 Meadow Mine",pill:"Starter zone",emoji:"🪨",hp:5,reward:8,unlock:0,bg:"meadow"},{name:"🏜️ Ember Desert",pill:"Hot zone",emoji:"🟫",hp:12,reward:20,unlock:150,bg:"desert"},{name:"❄️ Frost Cave",pill:"Chilly zone",emoji:"🧊",hp:22,reward:38,unlock:350,bg:"frost"}];
+const evolutions={0:{name:"Raichu",emoji:"⚡"},1:{name:"Vaporeon",emoji:"💧"},2:{name:"Charmeleon",emoji:"🔥"},3:{name:"Wartortle",emoji:"🌊"},4:{name:"Ivysaur",emoji:"🌿"},5:{name:"Wigglytuff",emoji:"🎀"}};
+const worlds=[{name:"🌿 Meadow Mine",pill:"Starter zone",emoji:"🪨",hp:5,reward:8,unlock:0,bg:"meadow"},{name:"🏜️ Ember Desert",pill:"Hot zone",emoji:"🟫",hp:12,reward:20,unlock:150,bg:"desert"},{name:"❄️ Frost Cave",pill:"Chilly zone",emoji:"🧊",hp:22,reward:38,unlock:350,bg:"frost"}];
 const defaults={coins:0,power:1,found:[],evolved:[],equipped:null,world:0,rebirths:0,blocks:0,lastDaily:""};
 let s;try{s=Object.assign({},defaults,JSON.parse(localStorage.getItem("mfp-save")||"{}"));}catch(e){s={...defaults};}if(!Array.isArray(s.evolved))s.evolved=[];
 let hp=worlds[s.world]?.hp||5, toastTimer;
