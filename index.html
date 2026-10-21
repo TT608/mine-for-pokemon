@@ -35,7 +35,7 @@ function multiplier(){return (1+s.rebirths*.5+Math.floor(s.rebirths/3)*.25)*budd
 function rollTrait(i){if(s.traits[i])return s.traits[i];const r=Math.random();s.traits[i]=r<.02?"Golden":r<.10?"Shiny":r<.16?"Giant":"Normal";return s.traits[i];}
 function buddyBonus(){if(s.equipped===null||!s.found.includes(s.equipped))return 1;return [1.1,1.1,1.15,1.15,1.15,1.1,1.2,1.5][s.equipped]+(s.evolved.includes(s.equipped)?.25:0);}
 function render(){
-$("coins").textContent=Math.floor(s.coins);$("power").textContent=s.power+" · x"+multiplier().toFixed(1);$("found").textContent=s.found.length+"/"+buddies.length;
+$("coins").textContent=Math.floor(s.coins);$("power").textContent=s.power+" · x"+multiplier().toFixed(1);$("found").textContent=s.found.length+"/"+buddies.length;$("rebirthProgress").textContent="Rebirth bonuses: +"+Math.round(s.rebirths*50+Math.floor(s.rebirths/3)*25)+"%";$("oreProgress").textContent="Ore mined: "+s.oreMined;
 $("worldTitle").textContent=worlds[s.world].name;$("worldPill").textContent=worlds[s.world].pill;
 $("block").textContent=worlds[s.world].emoji;$("hpText").textContent="Block strength: "+hp+" / "+worlds[s.world].hp;$("hpBar").style.width=(hp/worlds[s.world].hp*100)+"%";
 $("upgradeBtn").textContent="Upgrade · "+(25*s.power)+" 🪙";$("upgradeBtn").disabled=s.coins<25*s.power;
